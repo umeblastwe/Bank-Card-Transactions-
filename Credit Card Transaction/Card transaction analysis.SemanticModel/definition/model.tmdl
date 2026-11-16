@@ -1,0 +1,23 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-PK
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["credit_card_transactions"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table credit_card_transactions
+ref table DateTableTemplate_40a39c8c-662f-4fe6-adc9-9447f87a7c3f
+ref table LocalDateTable_4b20ecf9-39ff-46a8-9829-67d18aac8cd5
+ref table LocalDateTable_4c5c6de9-f3e1-424e-99f0-54a40ba5d051
+
+ref cultureInfo en-US
+

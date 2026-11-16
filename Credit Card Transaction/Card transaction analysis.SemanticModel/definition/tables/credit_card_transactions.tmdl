@@ -1,0 +1,279 @@
+table credit_card_transactions
+	lineageTag: 072ee8cd-bf0a-4425-b6fc-9750d387e23d
+
+	measure 'Count transaction number' = COUNT(credit_card_transactions[trans_num])
+		formatString: 0
+		lineageTag: 89ff5d17-2f20-491f-8c28-f5104f806c7a
+
+	measure 'AVG amount' = AVERAGE(credit_card_transactions[amt])
+		lineageTag: f63e39a9-3e51-4280-95eb-ccbcbe768e19
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Unnamed: 0'
+		dataType: int64
+		formatString: 0
+		lineageTag: 18db501a-5130-4d2c-8381-bb9017c2a26a
+		summarizeBy: sum
+		sourceColumn: Unnamed: 0
+
+		annotation SummarizationSetBy = Automatic
+
+	column trans_date_trans_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cb2b2693-4b7f-4409-838b-7c03f6b4459c
+		summarizeBy: none
+		sourceColumn: trans_date_trans_time
+
+		variation Variation
+			isDefault
+			relationship: 716c5e57-7688-422c-8835-4d81528a1e0c
+			defaultHierarchy: LocalDateTable_4b20ecf9-39ff-46a8-9829-67d18aac8cd5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column cc_num
+		dataType: int64
+		formatString: 0
+		lineageTag: 205f4cad-2bab-4c9a-839b-ed925e37c186
+		summarizeBy: sum
+		sourceColumn: cc_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column merchant
+		dataType: string
+		lineageTag: 7213c0b6-25ec-4a09-a6cd-5d6b3082c578
+		summarizeBy: none
+		sourceColumn: merchant
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: de5562ca-0eb4-44f9-866d-ff0a17b86253
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column amt
+		dataType: double
+		lineageTag: 92039a1e-f044-463d-b24b-1253329c2d26
+		summarizeBy: sum
+		sourceColumn: amt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gender
+		dataType: string
+		lineageTag: 223ed37c-bcea-4348-a638-7a30f242724a
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column street
+		dataType: string
+		lineageTag: 28de3a3f-a9b2-4c47-b733-8f196fedac48
+		summarizeBy: none
+		sourceColumn: street
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 4219e30a-edc6-43a3-b996-c786da579487
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: eb78ca2e-92ce-4f7f-85bc-e85f30d9d503
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip
+		dataType: int64
+		formatString: 0
+		lineageTag: 64c20e7b-247f-4c6e-81ab-972b9db5bca7
+		summarizeBy: sum
+		sourceColumn: zip
+
+		annotation SummarizationSetBy = Automatic
+
+	column lat
+		dataType: double
+		lineageTag: f9598e88-b0a8-415f-99dd-862ee07e68e1
+		summarizeBy: sum
+		sourceColumn: lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column long
+		dataType: double
+		lineageTag: 72ada6f3-f4bc-47b2-af74-d3e324714f2e
+		summarizeBy: sum
+		sourceColumn: long
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column city_pop
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c2d693f-0a94-4a39-8e1c-eadd09735378
+		summarizeBy: sum
+		sourceColumn: city_pop
+
+		annotation SummarizationSetBy = Automatic
+
+	column job
+		dataType: string
+		lineageTag: e8f365e0-6cbe-40b2-8388-455e8163e889
+		summarizeBy: none
+		sourceColumn: job
+
+		annotation SummarizationSetBy = Automatic
+
+	column dob
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ac6002cb-850e-4529-ba20-e21c1e2f4d1f
+		summarizeBy: none
+		sourceColumn: dob
+
+		variation Variation
+			isDefault
+			relationship: 84be036d-42cf-4ac2-9c28-4825493ca832
+			defaultHierarchy: LocalDateTable_4c5c6de9-f3e1-424e-99f0-54a40ba5d051.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column trans_num
+		dataType: string
+		lineageTag: 77c88fd6-c86e-4dbf-880d-578cb6ac1109
+		summarizeBy: none
+		sourceColumn: trans_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column unix_time
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f08f3df-2c44-4c0a-a71a-e2b56499f481
+		summarizeBy: sum
+		sourceColumn: unix_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column merch_lat
+		dataType: double
+		lineageTag: 40dcbe6a-ffe9-4a43-9f9c-1ef194f3f675
+		dataCategory: Latitude
+		summarizeBy: sum
+		sourceColumn: merch_lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column merch_long
+		dataType: double
+		lineageTag: c1fa77e9-b753-43b2-8edd-efb7fcb90725
+		dataCategory: Longitude
+		summarizeBy: sum
+		sourceColumn: merch_long
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_fraud
+		dataType: int64
+		formatString: 0
+		lineageTag: 3022a141-c82f-41be-a4b5-98938bb6f711
+		summarizeBy: sum
+		sourceColumn: is_fraud
+
+		annotation SummarizationSetBy = Automatic
+
+	column merch_zipcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f307719-0d7a-41b8-a1be-74a5e839f76e
+		summarizeBy: sum
+		sourceColumn: merch_zipcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Names'
+		dataType: string
+		lineageTag: 83e689d3-2850-46f5-ada5-6cdaa8765ea9
+		summarizeBy: none
+		sourceColumn: Customer Names
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age = DATEDIFF(credit_card_transactions[dob], TODAY(), YEAR)
+		formatString: 0
+		lineageTag: 02b47ca3-c2dc-4e97-bfe0-ef5cb8aa320a
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Age Group' =
+			
+			SWITCH(
+			    TRUE(),
+			    credit_card_transactions[Age] <= 20, "≤ 20",
+			    credit_card_transactions[Age] <= 30, "21-30",
+			    credit_card_transactions[Age] <= 40, "31-40",
+			    credit_card_transactions[Age] <= 50, "41-50",
+			    credit_card_transactions[Age] <= 60, "51-60",
+			    "60+"
+			)
+		lineageTag: 0d7aba2e-8fa5-4923-93e4-47b1b48d8bd2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country = "USA"
+		lineageTag: 9fd03bb9-ba10-4d38-ad09-840a805ae174
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Full Location' = credit_card_transactions[City] & ", " & credit_card_transactions[Country]
+		lineageTag: 1ef1e9a8-1a7e-4dcf-a6b2-25e796ae093d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition credit_card_transactions = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("D:\PowerBI\credit_card_transactions.csv"),[Delimiter=",", Columns=24, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Unnamed: 0", Int64.Type}, {"trans_date_trans_time", type datetime}, {"cc_num", Int64.Type}, {"merchant", type text}, {"category", type text}, {"amt", type number}, {"first", type text}, {"last", type text}, {"gender", type text}, {"street", type text}, {"city", type text}, {"state", type text}, {"zip", Int64.Type}, {"lat", type number}, {"long", type number}, {"city_pop", Int64.Type}, {"job", type text}, {"dob", type date}, {"trans_num", type text}, {"unix_time", Int64.Type}, {"merch_lat", type number}, {"merch_long", type number}, {"is_fraud", Int64.Type}, {"merch_zipcode", Int64.Type}}),
+				    #"Merged Columns" = Table.CombineColumns(#"Changed Type",{"first", "last"},Combiner.CombineTextByDelimiter("", QuoteStyle.None),"Customer Names")
+				in
+				    #"Merged Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

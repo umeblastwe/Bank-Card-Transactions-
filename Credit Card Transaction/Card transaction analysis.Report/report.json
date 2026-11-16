@@ -1,0 +1,168 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY18SU07\",\"type\":2,\"version\":{\"visual\":\"1.8.23\",\"report\":\"2.0.23\",\"page\":\"1.3.23\"}},\"customTheme\":{\"name\":\"Sunset_Lavender9233381470192833.json\",\"type\":1,\"version\":{\"visual\":\"2.1.0\",\"report\":\"2.1.0\",\"page\":\"2.0.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY18SU07",
+            "path": "BaseThemes/CY18SU07.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Sunset_Lavender9233381470192833.json",
+            "path": "Sunset_Lavender9233381470192833.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Overview",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "298d52182d405729270a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4cef4b80281d4c54b385\",\"layouts\":[{\"id\":0,\"position\":{\"x\":375.27272727272725,\"y\":0,\"z\":0,\"width\":548.3636363636364,\"height\":56.72727272727273,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Card Transactions Executive Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Calibri\",\"fontSize\":\"24pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 56.73,
+          "width": 548.36,
+          "x": 375.27,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"67e09917dc2c73405502\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1035.3600000000001,\"y\":57.6,\"z\":6000,\"width\":244.8,\"height\":662.4,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"The analysis shows that \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\"groceries and shopping are the top spending categories\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\", while \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\"personal care receives the least attention\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\". A \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\"sharp rise in December\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\" reflects increased festival and holiday expenses, indicating strong seasonal trends. \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\"Female customers account for 54.49% of total spending\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\", primarily on groceries, shopping, and household needs. In contrast, \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\"males contribute 45.31%\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}},{\"value\":\", with a larger share directed toward travel, highlighting distinct spending behaviors between the two groups.\",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 662.40,
+          "width": 244.80,
+          "x": 1035.36,
+          "y": 57.60,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"87501f1cd1a0e64804a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":484,\"y\":516,\"width\":541,\"height\":204,\"z\":5000,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"credit_card_transactions.category\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"}],\"Series\":[{\"queryRef\":\"credit_card_transactions.gender\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"category\"},\"Name\":\"credit_card_transactions.category\",\"NativeReferenceName\":\"category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"gender\"},\"Name\":\"credit_card_transactions.gender\",\"NativeReferenceName\":\"gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of amount by category and gender'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 204.00,
+          "width": 541.00,
+          "x": 484.00,
+          "y": 516.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a8b0d9b1b23ed0ca2950\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":56.833976833976834,\"z\":1000,\"width\":1025.4826254826255,\"height\":175.44401544401546,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"},{\"queryRef\":\"credit_card_transactions.Count transaction number\"},{\"queryRef\":\"credit_card_transactions.AVG amount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Count transaction number\"},\"Name\":\"credit_card_transactions.Count transaction number\",\"NativeReferenceName\":\"Count transaction number\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AVG amount\"},\"Name\":\"credit_card_transactions.AVG amount\",\"NativeReferenceName\":\"AVG amount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"layout\":[{\"properties\":{\"cellPadding\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'Cards'\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"image\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 175.44,
+          "width": 1025.48,
+          "x": 0.00,
+          "y": 56.83,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e2cc09401a1145dcd32e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":484.3243243243243,\"y\":232.2779922779923,\"z\":3000,\"width\":541.1583011583012,\"height\":274.2857142857143,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"}],\"Category\":[{\"queryRef\":\"credit_card_transactions.trans_date_trans_time.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"credit_card_transactions.trans_date_trans_time.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"credit_card_transactions.trans_date_trans_time.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"trans_date_trans_time\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"credit_card_transactions.trans_date_trans_time.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"trans_date_trans_time Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"trans_date_trans_time\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"credit_card_transactions.trans_date_trans_time.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"trans_date_trans_time Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"trans_date_trans_time\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"credit_card_transactions.trans_date_trans_time.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"trans_date_trans_time Day\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Auto'\"}}},\"optimizeLabelDisplay\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"dynamicLabelValue\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"credit_card_transactions\"}},\"Property\":\"amt\"}},\"Function\":0}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"highlightMatching\":1}}],\"lineStyles\":[{\"properties\":{\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strokeShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of amount by Year, Month and Day'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.29,
+          "width": 541.16,
+          "x": 484.32,
+          "y": 232.28,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e8bf516a1937a64624d6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":516,\"width\":484,\"height\":204,\"z\":4000,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"}],\"Category\":[{\"queryRef\":\"credit_card_transactions.gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"gender\"},\"Name\":\"credit_card_transactions.gender\",\"NativeReferenceName\":\"gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of amount by Gender'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 204.00,
+          "width": 484.00,
+          "x": 0.00,
+          "y": 516.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"eacf8d7030d23dd7e28b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":232.2779922779923,\"z\":2000,\"width\":484.3243243243243,\"height\":274.2857142857143,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"}],\"Category\":[{\"queryRef\":\"credit_card_transactions.category\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"category\"},\"Name\":\"credit_card_transactions.category\",\"NativeReferenceName\":\"category\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of amount by category'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.29,
+          "width": 484.32,
+          "x": 0.00,
+          "y": 232.28,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Customer Insights",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "50db9a4edcc5356e6095",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"194212aa98c5db4c5c79\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":406.3255813953488,\"height\":294.69767441860466,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"}],\"Category\":[{\"queryRef\":\"credit_card_transactions.Customer Names\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Customer Names\"},\"Name\":\"credit_card_transactions.Customer Names\",\"NativeReferenceName\":\"Customer Names\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Customers by Sum of Amount'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"credit_card_transactions\"}},\"Property\":\"Customer Names\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Customer Names\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Customer Names\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 294.70,
+          "width": 406.33,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b44de443a0b869d46d44\",\"layouts\":[{\"id\":0,\"position\":{\"x\":876.6511627906976,\"y\":0,\"z\":3000,\"width\":403.3488372093023,\"height\":294.69767441860466,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"credit_card_transactions.Age Group\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"}],\"Series\":[{\"queryRef\":\"credit_card_transactions.category\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age Group\"},\"Name\":\"credit_card_transactions.Age Group\",\"NativeReferenceName\":\"Age Group\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"category\"},\"Name\":\"credit_card_transactions.category\",\"NativeReferenceName\":\"category\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of Amount By Age group and Category'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.70,
+          "width": 403.35,
+          "x": 876.65,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d29321d75195874b16ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":427.16279069767444,\"y\":0,\"z\":2000,\"width\":430.13953488372096,\"height\":266.4186046511628,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"credit_card_transactions.Age Group\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(credit_card_transactions.amt)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age Group\"},\"Name\":\"credit_card_transactions.Age Group\",\"NativeReferenceName\":\"Age Group\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of Amount By Age group'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 266.42,
+          "width": 430.14,
+          "x": 427.16,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"dce79845309954a0b00d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":678.3098591549297,\"y\":295.2112676056338,\"z\":4000,\"width\":601.6901408450705,\"height\":425.9154929577465,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"The analysis reveals that \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\"Jeffery Smith is the highest-spending customer\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\", with a total spend of approximately \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\"244k\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\". Among age groups, the \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\"60+ segment records the highest overall spending\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\", followed by the \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\"31–40 age range\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\". Interestingly, customers in the \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\"21–30 and under-20 segments\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\" allocate a larger share of their spending to \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\"shopping\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\", while older age groups focus more heavily on \",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\"groceries and essentials\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}},{\"value\":\". This highlights distinct spending behaviors across age demographics, which can help tailor targeted offers and promotions.\",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 425.92,
+          "width": 601.69,
+          "x": 678.31,
+          "y": 295.21,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f7a018b343471027b5ec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":295.2112676056338,\"z\":1000,\"width\":642.2535211267606,\"height\":425.9154929577465,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"credit_card_transactions.Customer Names\"},{\"queryRef\":\"Sum(credit_card_transactions.amt)\"},{\"queryRef\":\"credit_card_transactions.job\"},{\"queryRef\":\"credit_card_transactions.Count transaction number\"},{\"queryRef\":\"credit_card_transactions.AVG amount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"credit_card_transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Customer Names\"},\"Name\":\"credit_card_transactions.Customer Names\",\"NativeReferenceName\":\"Customer Names\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"amt\"}},\"Function\":0},\"Name\":\"Sum(credit_card_transactions.amt)\",\"NativeReferenceName\":\"Sum of amt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"job\"},\"Name\":\"credit_card_transactions.job\",\"NativeReferenceName\":\"job\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Count transaction number\"},\"Name\":\"credit_card_transactions.Count transaction number\",\"NativeReferenceName\":\"Count transaction number\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AVG amount\"},\"Name\":\"credit_card_transactions.AVG amount\",\"NativeReferenceName\":\"AVG amount\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 425.92,
+          "width": 642.25,
+          "x": 0.00,
+          "y": 295.21,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Sunset_Lavender9233381470192833.json"
+}

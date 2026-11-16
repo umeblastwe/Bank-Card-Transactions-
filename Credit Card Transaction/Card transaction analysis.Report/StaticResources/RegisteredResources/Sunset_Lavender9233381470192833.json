@@ -1,0 +1,16 @@
+{
+  "name": "Sunset Lavender",
+  "dataColors": [
+    "#210FFF",
+    "#AEBBF2",
+    "#FF994E",
+    "#C83D95",
+    "#FFBBED",
+    "#42F9F9",
+    "#00B2D9",
+    "#FFD86C"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#070f25",
+  "tableAccent": "#0F1934"
+}
